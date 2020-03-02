@@ -8,7 +8,19 @@ namespace FadoRetail.BL
 {
     public class Klient
     {
+
+        // konstruktor bezparametrowy - domyślny
+        public Klient()
+        {
+
+        }
+
+        public Klient(int klientID)
+        {
+            this.KlientID = klientID;      
+        }
         // właściwości
+        #region właściwości
         public static int Licznik { get; set; }
 
         private string _nazwisko;
@@ -47,7 +59,10 @@ namespace FadoRetail.BL
                 return imieNazwisko;
             }
         }
+        #endregion 
+        
         // Metody
+
         /// <summary>
         /// Sprawdza czy wprowadzono dane
         /// </summary>
@@ -65,6 +80,36 @@ namespace FadoRetail.BL
             return poprawne;
         }
 
+        /// <summary>
+        /// Metoda zapisuje klienta
+        /// </summary>
+        /// <returns></returns>
+        public bool Zapisz()
+        {
+            //
+            return true;
+        }
+
+        /// <summary>
+        /// Pobiera klienta
+        /// </summary>
+        /// <param name="klientID"></param>
+        /// <returns></returns>
+        public Klient Pobierz(int klientID)
+        {
+            // kod który pobiera określonego klienta
+            return new Klient();
+        }
+
+        /// <summary>
+        /// Pobiera wszystkich klientów
+        /// </summary>
+        /// <returns></returns>
+        public List<Klient> PobierzWszystkich()
+        {
+            // kod który pobiera wszystkich klientów
+            return new List<Klient>();
+        }
 
     }
 }
