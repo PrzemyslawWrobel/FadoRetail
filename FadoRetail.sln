@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.28307.1000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FadoRetail.BL", "FadoRetail.BL\FadoRetail.BL.csproj", "{C95CAD4A-FDAC-403A-94B0-A6353AAD33B3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testy", "Testy", "{1001ABB2-A647-403B-9784-797EDAB8FBA8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testy", "Testy", "{EAB92F43-438E-474F-9A6C-8B089BC0A7DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FadoRetail.BL.Test", "..\FadoRetail.BL.Test\FadoRetail.BL.Test.csproj", "{F5B6B63A-493A-4783-A865-707326AAB978}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FadoRetail.BL.Test", "FadoRetail.BL.Test\FadoRetail.BL.Test.csproj", "{F57AB5DF-ADFA-4B03-A94E-001A950016EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,16 +19,16 @@ Global
 		{C95CAD4A-FDAC-403A-94B0-A6353AAD33B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C95CAD4A-FDAC-403A-94B0-A6353AAD33B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C95CAD4A-FDAC-403A-94B0-A6353AAD33B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F5B6B63A-493A-4783-A865-707326AAB978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F5B6B63A-493A-4783-A865-707326AAB978}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F5B6B63A-493A-4783-A865-707326AAB978}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F5B6B63A-493A-4783-A865-707326AAB978}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F57AB5DF-ADFA-4B03-A94E-001A950016EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F57AB5DF-ADFA-4B03-A94E-001A950016EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F57AB5DF-ADFA-4B03-A94E-001A950016EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F57AB5DF-ADFA-4B03-A94E-001A950016EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{F5B6B63A-493A-4783-A865-707326AAB978} = {1001ABB2-A647-403B-9784-797EDAB8FBA8}
+		{F57AB5DF-ADFA-4B03-A94E-001A950016EC} = {EAB92F43-438E-474F-9A6C-8B089BC0A7DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {26ABD93F-1CB4-4738-A353-394D9B91D344}

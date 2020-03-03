@@ -15,9 +15,9 @@ namespace FadoRetail.BL
 
         }
 
-        public Klient(int klientID)
+        public Klient(int klientId)
         {
-            this.KlientID = klientID;      
+            this.KlientId = klientId;      
         }
         // właściwości
         #region właściwości
@@ -40,7 +40,7 @@ namespace FadoRetail.BL
 
         public string Email { get; set; }
 
-        public int KlientID { get; private set; }
+        public int KlientId { get; private set; }
 
         public string ImieNazwizko
         {
@@ -93,9 +93,9 @@ namespace FadoRetail.BL
         /// <summary>
         /// Pobiera klienta
         /// </summary>
-        /// <param name="klientID"></param>
+        /// <param name="klientId"></param>
         /// <returns></returns>
-        public Klient Pobierz(int klientID)
+        public Klient Pobierz(int klientId)
         {
             // kod który pobiera określonego klienta
             return new Klient();

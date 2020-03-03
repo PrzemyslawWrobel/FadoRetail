@@ -70,7 +70,7 @@ namespace FadoRetail.BL
         /// <returns></returns>
         public List<Produkt> PobierzWszystkich()
         {
-            // kod który pobiera wszystkie produkty
+            // kod który pobiera wszystkic
             return new List<Produkt>();
         }
     }
