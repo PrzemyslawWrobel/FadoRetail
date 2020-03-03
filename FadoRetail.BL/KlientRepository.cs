@@ -8,15 +8,6 @@ namespace FadoRetail.BL
 {
     public class KlientRepository
     {
-        /// <summary>
-        /// Metoda zapisuje klienta
-        /// </summary>
-        /// <returns></returns>
-        public bool Zapisz()
-        {
-            //
-            return true;
-        }
 
         /// <summary>
         /// Pobiera klienta
@@ -37,7 +28,7 @@ namespace FadoRetail.BL
  
             }
 
-            return new Klient();
+            return klient;
         }
 
         /// <summary>
@@ -49,5 +40,16 @@ namespace FadoRetail.BL
             // kod który pobiera wszystkich klientów
             return new List<Klient>();
         }
+
+        /// <summary>
+        /// Metoda zapisuje klienta
+        /// </summary>
+        /// <returns></returns>
+        public bool Zapisz()
+        {
+            //
+            return true;
+        }
+
     }
 }
