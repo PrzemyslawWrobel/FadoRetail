@@ -14,7 +14,7 @@ namespace FadoRetail.BL.Test
             var produktRepository = new ProduktRepository();
             var oczekiwana = new Produkt(5)
             {
-               NazwaProduktu = "Klocki",
+                NazwaProduktu = "Klocki",
                 Opis = "Klocki dla dzieci",
                 AktualnaCena = 89.89M,
             };
