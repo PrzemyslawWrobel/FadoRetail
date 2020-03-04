@@ -8,17 +8,20 @@ namespace FadoRetail.BL
 {
     public class Klient
     {
-
+        #region Konstruktory
         // konstruktor bezparametrowy - domyślny
-        public Klient()
+        public Klient() : this(0)
         {
 
         }
 
         public Klient(int klientId)
         {
-            this.KlientId = klientId;      
+            this.KlientId = klientId;
+            ListaAdresow = new List<Adres>();
         }
+        #endregion
+
         // właściwości
         #region właściwości
         public static int Licznik { get; set; }
@@ -59,8 +62,12 @@ namespace FadoRetail.BL
                 return imieNazwisko;
             }
         }
-        #endregion 
-        
+
+        public List<Adres> ListaAdresow { get; set; }
+   
+        #endregion
+
+        #region Metody
         // Metody
 
         /// <summary>
@@ -110,6 +117,6 @@ namespace FadoRetail.BL
             // kod który pobiera wszystkich klientów
             return new List<Klient>();
         }
-
+        #endregion
     }
 }

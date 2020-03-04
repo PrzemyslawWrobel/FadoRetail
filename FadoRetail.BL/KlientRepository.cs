@@ -8,6 +8,12 @@ namespace FadoRetail.BL
 {
     public class KlientRepository
     {
+        private AdresRepository adresRepository { get; set; }
+
+        public KlientRepository()
+        {
+            adresRepository = new AdresRepository();
+        }
 
         /// <summary>
         /// Pobiera klienta
@@ -18,6 +24,7 @@ namespace FadoRetail.BL
         {
             // Tworzymy instancję określonego klienta
             Klient klient = new Klient(klientId);
+            klient.ListaAdresow = adresRepository.PobierzPoKlientId(klientId).ToList();
             // tymczasowo zakodowane wartości aby zwrócić klienta
             // kod który pobiera określonego klienta
             if (klientId == 1)
