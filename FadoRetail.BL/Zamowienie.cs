@@ -15,12 +15,17 @@ namespace FadoRetail.BL
         {
             ZamowienieId = zamowienieId;
         }
+
+        #region Właściwości
         public int ZamowienieId { get; private set; }
 
         public DateTimeOffset? DataZamowienia { get; set; }
 
-        // Metody
-
+        public List<PozycjaZamowienia> pozycjaZamowienias { get; set; }
+        public int KlientID { get; set; }
+        public int AdresDostawyId { get; set; }
+        #endregion
+        #region Metody
         /// <summary>
         /// Sprawdza dane zamówienia
         /// </summary>
@@ -66,5 +71,5 @@ namespace FadoRetail.BL
             return new List<Zamowienie>();
         }
     }
-    
+#endregion
 }
