@@ -15,6 +15,9 @@ namespace FadoRetail.BL
             // tworzenie instancji produktu
 
             Produkt produkt = new Produkt(produktId);
+            object mojobject = new object();
+            System.Console.WriteLine("Obiekt : " + mojobject.ToString());
+            System.Console.WriteLine( " obiekt : " + produkt.ToString() );
 
             // tymczasowo zakodowany produkt
 
