@@ -64,7 +64,10 @@ namespace FadoRetail.BL
         }
 
         public List<Adres> ListaAdresow { get; set; }
-   
+
+        public int KlientTyp { get; set; }
+
+
         #endregion
 
         #region Metody
