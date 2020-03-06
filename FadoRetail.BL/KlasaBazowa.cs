@@ -19,9 +19,17 @@ namespace FadoRetail.BL
         {
             get
             {
-                return true;
+                return Zwaliduj();
             }
         }
+
+        /// <summary>
+        /// metoda jest abstrakt ponieważ klasa bazowa nie ma możliwości sprawdzania poprawności danych dla danej klasy
+        /// </summary>
+        /// <returns></returns>
+        public abstract bool Zwaliduj();
+     
+
     }
         public enum StanObjektuOpcje
         {

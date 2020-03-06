@@ -39,15 +39,6 @@ namespace FadoRetail.BL
             return new List<Zamowienie>();
         }
 
-        /// <summary>
-        /// Metoda zapisuje zmówienie
-        /// </summary>
-        /// <returns></returns>
-        public bool Zapisz()
-        {
-            // zapisuje zdefiniowane zamówienie
-            return true;
-        }
 
         /// <summary>
         /// Pobierz jedno zamowienie do wyświetlenia
@@ -101,5 +92,32 @@ namespace FadoRetail.BL
             }
             return wyswietlanieZamowienia;
         }
+
+
+        /// <summary>
+        /// Metoda zapisuje zmówienie
+        /// </summary>
+        /// <returns></returns>
+        public bool Zapisz(Zamowienie zamowienie)
+        {
+            // zapisuje zdefiniowane zamówienie
+            var sukces = true;
+            if (zamowienie.MaZmiany && zamowienie.DanePrawidlowe)
+            {
+                if (zamowienie.JestNowy)
+                {
+                    // wywołaj procedurę insert
+                }
+                else
+                {
+                    //wywołać  procedurę update
+                }
+
+            }
+            return sukces;
+        }
+
     }
+
+
 }

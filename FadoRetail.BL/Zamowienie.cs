@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FadoRetail.BL
 {
-    public class Zamowienie
+    public class Zamowienie : KlasaBazowa
     {
         public Zamowienie()
         {
@@ -30,7 +30,7 @@ namespace FadoRetail.BL
         /// Sprawdza dane zamówienia
         /// </summary>
         /// <returns> </returns>
-        public bool Zwaliduj()
+        public override bool Zwaliduj()
         {
             var poprawne = true;
 

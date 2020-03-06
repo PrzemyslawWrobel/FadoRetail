@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FadoRetail.BL
 {
-    public class KlientRepository
+    public class KlientRepository 
     {
         private AdresRepository adresRepository { get; set; }
 
@@ -52,10 +52,22 @@ namespace FadoRetail.BL
         /// Metoda zapisuje klienta
         /// </summary>
         /// <returns></returns>
-        public bool Zapisz()
+        public bool Zapisz(Klient klient)
         {
-            //
-            return true;
+            var sukces = true;
+            if (klient.MaZmiany && klient.DanePrawidlowe)
+            {
+                if (klient.JestNowy)
+                {
+                    // wywołaj procedurę insert
+                }
+                else
+                {
+                    //wywołać  procedurę update
+                }
+
+            }
+            return sukces;
         }
 
     }

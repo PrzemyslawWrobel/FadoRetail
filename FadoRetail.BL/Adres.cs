@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FadoRetail.BL
 {
-    public class Adres
+    public class Adres 
 
     {
         public Adres()

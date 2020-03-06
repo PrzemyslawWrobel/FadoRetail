@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FadoRetail.BL
 {
-    public class Produkt
+    public class Produkt : KlasaBazowa
     {
         public Produkt()
         {
@@ -31,7 +31,7 @@ namespace FadoRetail.BL
         /// Sprawdza cdane produktu
         /// </summary>
         /// <returns> </returns>
-        public bool Zwaliduj()
+        public override bool Zwaliduj()
         {
             var poprawne = true;
             if (string.IsNullOrWhiteSpace(NazwaProduktu))

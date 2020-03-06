@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FadoRetail.BL
 {
-    public class Klient
+    public class Klient : KlasaBazowa
     {
         #region Konstruktory
         // konstruktor bezparametrowy - domyślny
@@ -77,7 +77,7 @@ namespace FadoRetail.BL
         /// Sprawdza czy wprowadzono dane
         /// </summary>
         /// <returns> </returns>
-        public bool Zwaliduj()
+        public override bool Zwaliduj()
         {
             var  poprawne = true;
             if (string.IsNullOrWhiteSpace(Nazwisko))
