@@ -73,5 +73,11 @@ namespace FadoRetail.BL
             // kod który pobiera wszystkic
             return new List<Produkt>();
         }
+
+
+        public override string ToString()
+        {
+            return NazwaProduktu;  
+        }
     }
 }

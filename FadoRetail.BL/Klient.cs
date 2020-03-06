@@ -121,5 +121,10 @@ namespace FadoRetail.BL
             return new List<Klient>();
         }
         #endregion
+
+        public override string ToString()
+        {
+            return ImieNazwizko;
+        }
     }
 }
