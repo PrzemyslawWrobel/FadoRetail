@@ -23,7 +23,12 @@ namespace FadoRetail.BL
 
         public string Opis { get; set; }
 
-        public string NazwaProduktu { get; set; }
+        private string _NazwaProduktu;
+        public string NazwaProduktu
+        {
+            get { return _NazwaProduktu; }
+            set { _NazwaProduktu = value; }
+        }
 
         // Metody
 
@@ -79,5 +84,7 @@ namespace FadoRetail.BL
         {
             return NazwaProduktu;  
         }
+
+      
     }
 }
