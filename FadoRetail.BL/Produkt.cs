@@ -89,6 +89,14 @@ namespace FadoRetail.BL
             return NazwaProduktu;
         }
 
+        public string Log()
+        {
+            var log = ProduktId + ":" +
+                NazwaProduktu + " " +
+                "Opis:" + Opis + " " +
+                "Status:" + StanObjektu.ToString();
+            return log;
+        }
 
     }
 }

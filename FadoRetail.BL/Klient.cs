@@ -28,7 +28,8 @@ namespace FadoRetail.BL
 
         private string _nazwisko;
 
-        public string Nazwisko {
+        public string Nazwisko
+        {
             get
             {
                 return _nazwisko;
@@ -53,7 +54,7 @@ namespace FadoRetail.BL
 
                 if (!string.IsNullOrWhiteSpace(Nazwisko))
                 {
-                    if(!string.IsNullOrWhiteSpace(imieNazwisko))
+                    if (!string.IsNullOrWhiteSpace(imieNazwisko))
                     {
                         imieNazwisko += ", ";
                     }
@@ -79,7 +80,7 @@ namespace FadoRetail.BL
         /// <returns> </returns>
         public override bool Zwaliduj()
         {
-            var  poprawne = true;
+            var poprawne = true;
             if (string.IsNullOrWhiteSpace(Nazwisko))
                 poprawne = false;
 
@@ -125,6 +126,15 @@ namespace FadoRetail.BL
         public override string ToString()
         {
             return ImieNazwizko;
+        }
+
+        public string Log()
+        {
+            var log = KlientId + ": " +
+                ImieNazwizko + " " +
+                "Email: " + Email + " " +
+                " Status: " + StanObjektu.ToString();
+            return log;
         }
     }
 }

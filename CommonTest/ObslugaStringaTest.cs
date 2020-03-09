@@ -32,7 +32,7 @@ namespace CommonTest
         public void WstawSpacjeTestZeSpacja()
         {
 
-            // Arrange (przygotuj test)
+            // Arrange (przygotuj test) 
 
             var zrodlo = "Stół Ogrodowy";
             var oczekiwana = "Stół Ogrodowy";
