@@ -29,7 +29,7 @@ namespace FadoRetail.BL
         {
             get
             {
-                return ObslugaStringa.WstawSpacje(_NazwaProduktu);
+                return _NazwaProduktu.WstawSpacje();
             }
             set { _NazwaProduktu = value; }
         }
