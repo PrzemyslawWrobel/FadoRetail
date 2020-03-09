@@ -13,10 +13,12 @@ namespace Common
                 {
                     if (char.IsUpper(litera))
                     {
+                        wynik = wynik.Trim();
                         wynik += " ";
                     }
                     wynik += litera;
                 }
+                wynik = wynik.Trim();
             }
             return wynik;
         }
