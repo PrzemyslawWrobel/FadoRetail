@@ -12,7 +12,7 @@ namespace Common
             foreach (var element in ZmienioneElementy)
             {
 
-                //Console.WriteLine(element.);
+                Console.WriteLine(element.);
             }
         }
     }

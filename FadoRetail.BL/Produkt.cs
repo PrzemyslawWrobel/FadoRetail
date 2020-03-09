@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FadoRetail.BL
 {
-    public class Produkt : KlasaBazowa
+    public class Produkt : KlasaBazowa, ILogowanie
     {
         public Produkt()
         {

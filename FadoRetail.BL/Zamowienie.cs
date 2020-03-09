@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FadoRetail.BL
 {
-    public class Zamowienie : KlasaBazowa
+    public class Zamowienie : KlasaBazowa, ILogowanie
     {
         public Zamowienie()
         {
@@ -74,6 +75,14 @@ namespace FadoRetail.BL
         public override string ToString()
         {
             return DataZamowienia.Value.Date + "(" + ZamowienieId + ")" ; 
+        }
+
+        public string Log()
+        {
+            var log = ZamowienieId + ": " +
+                "Data :" + DataZamowienia.Value.Date + " " +
+                "Status :" + StanObjektu.ToString();
+            return log;
         }
     }
 #endregion
