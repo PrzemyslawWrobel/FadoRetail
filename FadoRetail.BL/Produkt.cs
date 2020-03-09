@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,7 +27,10 @@ namespace FadoRetail.BL
         private string _NazwaProduktu;
         public string NazwaProduktu
         {
-            get { return _NazwaProduktu; }
+            get
+            {
+                return ObslugaStringa.WstawSpacje(_NazwaProduktu);
+            }
             set { _NazwaProduktu = value; }
         }
 
@@ -42,7 +46,7 @@ namespace FadoRetail.BL
             if (string.IsNullOrWhiteSpace(NazwaProduktu))
                 poprawne = false;
 
-            if (AktualnaCena ==null)
+            if (AktualnaCena == null)
                 poprawne = false;
 
             return poprawne;
@@ -82,9 +86,9 @@ namespace FadoRetail.BL
 
         public override string ToString()
         {
-            return NazwaProduktu;  
+            return NazwaProduktu;
         }
 
-      
+
     }
 }
